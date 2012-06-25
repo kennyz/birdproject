@@ -1,0 +1,102 @@
+body {
+	margin:20px;
+	font-family:'微软雅黑',arial;
+	font-size:12px;
+	background-color: #fff;
+}
+#color_selector {
+	z-index:999;
+	position: absolute;
+	top:50px;
+	left:400px;
+	display: none;
+}
+#color_selector a {
+	display: block;
+	width:40px;
+	height:12px;
+	margin:1px;
+}
+#color_selector div {
+	width : 45px;
+	float:left;
+}
+
+#color_selector a:hover, #color_selector > .selected {
+	border: 2px solid hsla(230,100%,50%,1);
+	height:8px;
+	width:36px;
+}
+
+.node {
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	cursor:default;
+	line-height:110%;
+  position:absolute;
+  display: block;
+	padding:4px;
+	border-radius:4px;
+	box-shadow: 1px 1px 5px hsla(0, 0%, 50%, 0.9);
+}
+.node div {
+	font-size:10px;
+}
+/*
+.node.red div, .node.blue div, .node.purple div {
+	color:#eee;
+}*/
+
+.head > .title{
+	white-space:nowrap;
+	display:inline;
+}
+.node input[type=text], .node textarea{
+	border:0;
+	margin:0;
+	padding: 1px;
+	background-color:rgba(255,255,255,0.3);
+	font-family:'微软雅黑',arial;
+	font-size:10px;
+	overflow: visible;
+	display:inline-block;
+}
+.node > .body >  textarea{
+	font-family:'微软雅黑',arial;
+	font-size:12px;
+	line-height:110%;
+	overflow: visible;
+}
+.head > .date > input {
+	font-family:mono;
+	text-align:right;
+}
+
+.head > .date{
+	font-family:mono;
+	width:25px;
+	text-align:right;
+	float:right;
+	display:inline;
+}
+.foot {
+	font-family:'微软雅黑',arial;
+	font-size:10px;
+}
+.foot > input[type=checkbox] {
+	float:right;
+	margin:2px 0 0 0;
+	padding: 0;
+}
+.foot > .user {
+
+}
+
+.node > .body{
+	font-size:12px;
+	text-align:left;
+}
